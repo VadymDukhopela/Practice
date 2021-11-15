@@ -21,7 +21,7 @@ img{
     top: 0px;
     padding: 20px 80px;
     font-family: Motter Corpus;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-menu{
@@ -72,19 +72,28 @@ img{
 
 .hero{
     padding-top: 120px;
+    position: relative;
+    margin: 0 108px;
 }
 
 .hero__items{
     background-image: url(../style/images/hero/confettis.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: flex-start;
 }
 
+.hero__info{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .hero__title{
-    position: absolute;
     font-family: Motter Corpus, sans-serif;
     font-weight: 400;
     text-align: center;
@@ -100,12 +109,13 @@ img{
 }
 
 .hero__subtitle{
-    position: absolute;
     font-size: 120px;
     background: linear-gradient(to bottom, #0b4141 50%, #0b1f1f 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Motter Corpus, sans-serif;
-    bottom: 5%;
     z-index: 2;
 }
+
+
+
